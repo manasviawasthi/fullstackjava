@@ -1,0 +1,66 @@
+body{
+    padding: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,pink,#5C6AC4);
+  }
+  .title {
+      color: #5C6AC4;
+  }
+  #bu{
+    padding:10px;
+    border:hidden;
+    border-radius: 10px;
+    background-color:rgba(65, 65, 218, 0.978);
+    color:white;
+    margin-bottom:30px;
+  }
+  #bu:hover{
+    background-color:#5C6AC4 ;
+  }
+  #mail{
+    margin-left: 45px;
+  }
+  .txt{
+    border-radius:5px ;
+    border-width: 0.5px;
+    padding: 5px;
+    
+  }
+  .txt:hover{
+    border-width: 2px;
+    
+  }
+  .txt:invalid{
+    border-color: red;
+  }
+  .txt:valid{
+    border-color:green;
+  }
+  #course{
+    border-radius:5px;
+    border-width: 0.5px;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 50px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.206),-10px -10px 40px rgba(0, 0, 0, 0.206);
+}
+
+h1{
+    margin: 30px;
+  }
+#thnk{
+  margin-bottom: 20px;
+  width: 400px;
+  box-shadow: 0px 0px 0px;
+  text-align: center;
+  color:green;
+}

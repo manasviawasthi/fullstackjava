@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsonex</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <script>
+        const students = [
+        {name:"john",age:22,email:"johna@gmail.com"},
+        {name:"manasvi",age:22,email:"manasvi@gmail.com"}
+        ]
+        /*for(let i=0;i<students.length;i++){
+            console.log(students[i]);
+        }*/
+        students.forEach(students=>console.log(students))
+        students.push({name:"abhinav",age:21,email:"abh@gmail.com"})
+        const jsonData = JSON.stringify(students);
+        console.log("JSON data:",jsonData)
+
+    </script>
+</body>
+</html>

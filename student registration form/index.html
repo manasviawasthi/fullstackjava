@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+        <h1 class="title">Student Registration Form</h1>
+      <form>
+        <label for="fullname">Full Name</label>
+        <input class="txt" type="text" id="fname" name="fname" required><br><br>
+        <label for="email">Email</label>
+        <input class="txt" type="email" id="mail" name="email" required><br><br>
+        <label for="gender">Select Gender</label><br>
+        <input type="radio" name="gender" id="male" value="male" required/>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" value="female" required />
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="others" value="others" required/>
+        <label for="others">others</label><br><br>
+        
+        <label for="course">Choose a course:</label>
+        <select id="course" name="course" required>
+        <option value="BE">BE</option>
+        <option value="BSC">BSC</option>
+        <option value="BCom">Bcom</option>
+        <option value="BA">BA</option>
+        </select><br><br>
+        <label for="Hobbies">Hobbies</label><br>
+        <input type="checkbox" name="Hobbiesh" value="gaming" id="gaming">
+        <label for="gaming">gaming</label><br>
+        <input type="checkbox" name="Hobbies" value="scketching" id="sketching">
+        <label for="scketching">scketching</label><br>
+        <input type="checkbox" name="Hobbies"value="traveling" id="traveling">
+        <label for="traveling">traveling</label><br><br>
+        <label for="comments">comments</label><br>
+        <textarea class="txt" id="comments" name="comments" rows="4" col="50"></textarea><br><br>
+        <input type ="submit" id="bu">
+      </form>
+      <div id="thnk"></div>
+      <script>
+          let form = document.querySelector("form");
+          let thank=document.getElementById("thnk");
+          form.addEventListener("submit",function(event){
+            event.preventDefault();
+            let name=document.getElementById("fname").value.trim();
+            let email=document.getElementById("mail").value.trim();
+            if(name===""||email===""){
+              alert("fill the fields")
+            }
+            else{
+              thank.textContent=`Thank you ${name} for registring ,We will contact you on ${email}`;
+            }
+            alert("Registration Complete!!")
+            
+          });
+        </script>
+    </div>
+      
+  </body>
+</html>
